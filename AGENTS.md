@@ -12,6 +12,7 @@ Refer to these documents for detailed project context:
 - **Start**: `npm run start`
 
 ## ⚠️ Critical Constraints (Do NOT Ignore)
+- **File Deletion**: NEVER use `rm`, `truncate`, or any other deletion/overwrite commands without explicitly asking the user for confirmation first.
 - **UI**: ALWAYS use `shadcn/ui` components from `@/components/ui`. Do not implement custom primitive UI elements if a shadcn component exists.
 - **AI**: Only use `OpenRouter/Kimi k2.6` for all analysis and screening tasks.
 - **Database**: Never perform raw vector calculations in application code; offload all vector searches to Supabase/pgvector.
