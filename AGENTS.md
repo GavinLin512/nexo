@@ -16,4 +16,5 @@ Refer to these documents for detailed project context:
 - **UI**: ALWAYS use `shadcn/ui` components from `@/components/ui`. Do not implement custom primitive UI elements if a shadcn component exists.
 - **AI**: Only use `OpenRouter/Kimi k2.6` for all analysis and screening tasks.
 - **Database**: Never perform raw vector calculations in application code; offload all vector searches to Supabase/pgvector.
+- **Static Export**: The frontend MUST stay statically exportable (`output: 'export'`). NEVER use Next.js API routes, Server Actions, SSR, ISR, or middleware. Frontend data access goes through the Supabase client SDK (anon key + RLS); all secret-bearing logic (LLM, `service_role`, SMTP) runs in Supabase Edge Functions / GitHub Actions, never in the frontend bundle.
 - **Consistency**: Strictly adhere to the "Four-Layer Structure" for all generated reports.

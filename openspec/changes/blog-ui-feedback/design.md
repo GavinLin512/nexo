@@ -19,7 +19,7 @@
 
 - **Rendering: react-markdown + Tailwind Typography**: 使用 `react-markdown` 結合 Tailwind 的 `prose` 類，確保 AI 生成的 Markdown 報告具有出版級的視覺效果。
 - **Visuals: Recharts**: 選擇 `Recharts` 作為圖表庫，用於呈現主題權重分佈圖（Pie Chart）與情感趨勢圖（Line Chart）。
-- **State Management: Server Actions & Optimistic UI**: 利用 Next.js 14 的 Server Actions 處理反饋提交與來源編輯，並使用 Optimistic UI 提升交互流暢度。
+- **State Management: Supabase Client SDK + Optimistic UI**: 因採用靜態匯出 (`output: 'export'`)，**不使用** Next.js Server Actions。反饋提交與來源編輯由前端透過 Supabase client SDK（anon key + RLS）直接寫入資料庫，並使用 Optimistic UI 提升交互流暢度。所有寫入權限由 RLS 控管，前端不持有任何 secret key。
 - **Feedback Architecture**: 建立 `feedback` 表，記錄 `{ report_id, section_type, score (1/-1), user_comment }`，以便後續將統計數據注入 AI 的 System Prompt 中。
 
 ## Risks / Trade-offs

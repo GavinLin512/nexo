@@ -13,11 +13,11 @@
 **Non-Goals:**
 - 實作具體的 CRUD API（將在後續模組處理）。
 - 建立文章內容表或向量表（將在 `db-schema-articles` 處理）。
-- 實作複雜的行級安全策略 (RLS)（初期僅定義基礎權限）。
+- 實作「複雜」的多角色行級安全策略 (RLS)。但因前端透過 Supabase client SDK 直連資料庫，**基礎 RLS 為必要項目**（非延後）：`profiles`、`sources`、`feedback` 等前端可存取的表必須在本階段啟用 RLS 並定義基本讀寫政策，作為唯一的安全邊界。
 
 ## Decisions
 
-- **Schema Management: Prisma**: 使用 Prisma Schema 文件作為 Single Source of Truth，透過 `prisma db push` 快速迭代。
+- **Schema Management: Prisma**: 使用 Prisma Schema 文件作為 Single Source of Truth，透過 `prisma db push` 快速迭代。Prisma 僅在 Node 環境使用（本機開發、GitHub Actions pipeline worker）；**靜態前端不使用 Prisma**，改以 Supabase client SDK 存取資料。
 - **Database: Supabase (PostgreSQL)**: 利用其托管特性簡化部署。
 - **Table Design**: 
     - `profiles`: 一對一關聯至 Supabase Auth User。

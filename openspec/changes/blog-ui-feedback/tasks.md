@@ -11,14 +11,14 @@
 - [ ] 2.1 Create `SourceManager` page with a data table listing all current sources
 - [ ] 2.2 Implement the "Add Source" modal with fields for URL, Name, and Type
 - [ ] 2.3 Implement the "Keyword Editor" component for managing Must-include/Must-exclude lists
-- [ ] 2.4 Implement Server Actions for CRUD operations on the `sources` table
+- [ ] 2.4 Implement CRUD on the `sources` table via the Supabase client SDK (anon key + RLS), NOT Server Actions
 - [ ] 2.5 Verify that updating keywords in the UI immediately affects the next `SyncService` run
 
 ## 3. Feedback Loop & Data Collection
 
 - [ ] 3.1 Create the `feedback` table in Supabase: `id`, `reportId`, `sectionType`, `score`, `comment`, `createdAt`
 - [ ] 3.2 Implement the Thumb Up/Down interactive buttons for each of the 4 report layers
-- [ ] 3.3 Implement the API endpoint/Server Action to save user feedback to the DB
+- [ ] 3.3 Save user feedback by inserting into the `feedback` table via the Supabase client SDK (anon key + RLS), NOT an API route / Server Action
 - [ ] 3.4 Create a utility to aggregate feedback (e.g., "average score per section") for the AI Agent
 - [ ] 3.5 Integrate the feedback summary into the `WeeklyReportAgent` prompt to refine future outputs
 

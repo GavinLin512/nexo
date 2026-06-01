@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "skills": {
+    "vibehost-deploy": {
+      "source": "gntc-labs/skills",
+      "sourceType": "github",
+      "skillPath": "plugins/vibehost/skills/vibehost-deploy/SKILL.md",
+      "computedHash": "3b4af7cd3fa570a558cc1daf2fed69d64800551f7f99282467e3c13a3d0017b2"
+    }
+  }
+}
