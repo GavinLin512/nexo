@@ -4,6 +4,7 @@
 Refer to these documents for detailed project context:
 - **Architecture & Tech Stack**: `.opencode/docs/architecture.md`
 - **Project Plan**: `.opencode/docs/plan.md`
+- **Deployment**: `.opencode/docs/deploy.md`
 - **Current Tasks**: `openspec/changes/*/tasks.md`
 
 ## 🛠️ Developer Commands
