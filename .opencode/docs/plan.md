@@ -16,7 +16,7 @@ A private-by-default web hosting for agents that manages RSS/Multi-source feeds 
 ### 2. Processing Layer
 - **Filtering**: 
     - Layer 1: Hard keyword/regex filter before DB entry.
-    - Layer 2: AI Pre-screening (GPT-4o-mini/Haiku) to score relevance.
+    - Layer 2: AI Pre-screening (Kimi k2.6) to score relevance.
 - **Data**: Store title, summary, and original link.
 
 ### 3. AI Analyst Agent (Weekly Workflow)
@@ -39,7 +39,7 @@ A private-by-default web hosting for agents that manages RSS/Multi-source feeds 
 - **Frontend**: Next.js 14, Tailwind CSS, shadcn/ui
 - **Backend**: Next.js API / Server Actions
 - **Database & Vector DB**: Supabase (PostgreSQL + pgvector)
-- **AI**: GPT-4o (Analysis), GPT-4o-mini (Screening)
+- **AI**: OpenRouter/Kimi k2.6 (Analysis & Screening)
 - **Scheduler**: Upstash Workflow / GitHub Actions
 
 ## Roadmap
