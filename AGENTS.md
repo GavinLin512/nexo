@@ -1,4 +1,4 @@
-# Agent Instructions: VibeHost
+# Agent Instructions: Nexo
 
 ## 📚 Knowledge Base (Lazy Loading)
 Refer to these documents for detailed project context:

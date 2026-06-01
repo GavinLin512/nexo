@@ -1,4 +1,4 @@
-# VibeHost: AI-Powered Industry Insight System Plan
+# Nexo: AI-Powered Industry Insight System Plan
 
 ## Project Goal
 A private-by-default web hosting for agents that manages RSS/Multi-source feeds and generates weekly AI-driven industry analysis reports.
