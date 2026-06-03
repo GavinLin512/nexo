@@ -11,11 +11,11 @@
 - [x] 2.1 Define the `Profile` model in `schema.prisma` with fields: `id`, `userId`, `preferences`, `updatedAt`
 - [x] 2.2 Define the `Source` model in `schema.prisma` with fields: `id`, `name`, `url`, `type`, `keywords`
 - [x] 2.3 Set up the relationship between `Profile` and `Source` (if applicable) or keep them independent for MVP
-- [ ] 2.4 Run `npx prisma db push` to sync the schema with the Supabase database
+- [x] 2.4 Run `npx prisma db push` to sync the schema with the Supabase database
 
 ## 3. Verification & Client Generation
 
-- [ ] 3.1 Generate the Prisma Client: `npx prisma generate`
-- [ ] 3.2 Open Prisma Studio (`npx prisma studio`) to verify the tables `profiles` and `sources` are created
-- [ ] 3.3 Manually insert one test record into `sources` via Prisma Studio to verify write access
-- [ ] 3.4 Run a basic script to fetch the test record and verify read access
+- [x] 3.1 Generate the Prisma Client: `npx prisma generate`
+- [x] 3.2 Open Prisma Studio (`npx prisma studio`) to verify the tables `profiles` and `sources` are created
+- [x] 3.3 Manually insert one test record into `sources` via Prisma Studio to verify write access
+- [x] 3.4 Run a basic script to fetch the test record and verify read access
